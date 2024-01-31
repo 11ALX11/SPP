@@ -1,17 +1,31 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+/** Variant 2*/
 public class Main {
+    /**
+     * @param args целые числа для последовательности задачи 1
+     */
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        int[] exampleSequence = convertArgsToSequence(args);
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        Task1.exec(exampleSequence);
+        Task2.exec();
+        Task3.exec();
+    }
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+    public static int[] convertArgsToSequence(String[] args) {
+        if (args.length == 0) {
+            return new int[0];
         }
+
+        int[] sequence = new int[args.length];
+        for (int i = 0; i < args.length; i++) {
+            try {
+                sequence[i] = Integer.parseInt(args[i]);
+            } catch (NumberFormatException e) {
+                System.err.println("Invalid input: " + args[i] + " is not a valid integer.");
+                return new int[0];
+            }
+        }
+
+        return sequence;
     }
 }
