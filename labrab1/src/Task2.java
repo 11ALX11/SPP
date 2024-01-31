@@ -23,6 +23,7 @@ public class Task2 {
         for (double element : array) {
             System.out.print(element + " ");
         }
+		System.out.println();
     }
 
     /** Напишите метод reverse(double[] array),
