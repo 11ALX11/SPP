@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Task2" type="JarApplication">
+    <option name="JAR_PATH" value="$PROJECT_DIR$/out/artifacts/tail_jar/tail.jar" />
+    <option name="PROGRAM_PARAMETERS" value="3 task2.txt" />
+    <option name="WORKING_DIRECTORY" value="C:\Users\misij\Documents\SPP\labrab2" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <method v="2">
+      <option name="BuildArtifacts" enabled="true">
+        <artifact name="tail:jar" />
+      </option>
+    </method>
+  </configuration>
+</component>
