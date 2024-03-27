@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="AllTasks" type="CompoundRunConfigurationType">
+    <toRun name="Task1" type="Application" />
+    <toRun name="Task2" type="Application" />
+    <toRun name="Task3" type="Application" />
+    <method v="2" />
+  </configuration>
+</component>
