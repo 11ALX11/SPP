@@ -1,0 +1,10 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Task2" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="com.labrab7.task2.Main" />
+    <module name="labrab7" />
+    <option name="PROGRAM_PARAMETERS" value="6" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
