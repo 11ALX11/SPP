@@ -1,7 +1,5 @@
 package com.labrab6.task2;
 
-import com.labrab6.task3.Visitor;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,6 +30,11 @@ class Directory implements FileSystemComponent
         return name;
     }
 
+    public List<FileSystemComponent> getComponents()
+    {
+        return components;
+    }
+
     @Override
     public void displayInfo(String indent)
     {
@@ -42,9 +45,4 @@ class Directory implements FileSystemComponent
         }
     }
 
-    @Override
-    public void accept(Visitor visitor)
-    {
-        visitor.visitDir(this);
-    }
 }

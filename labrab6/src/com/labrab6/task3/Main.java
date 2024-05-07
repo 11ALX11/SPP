@@ -4,12 +4,10 @@ import com.labrab6.task2.Directory;
 import com.labrab6.task2.File;
 import com.labrab6.task2.FileSystemComponent;
 
-import java.util.Arrays;
-
 /**
- * Реализовать фрагмент программной системы, используя выбранный паттерн (Посетитель).
+ * Реализовать фрагмент программной системы, используя выбранный паттерн (Итератор).
  * Реализовать все необходимые дополнительные классы.
- * <p>
+ * <br>
  * Реализовать вывод ФС из 2-й группы заданий.
  * Вывод файлов/директорий должен осуществляться в случайном порядке.
  * Вывести основные атрибуты каждого файла/директории.
@@ -37,12 +35,14 @@ public class Main
         // Добавляем вторую директорию в первую
         directory1.addComponent(directory2);
 
+        // Создаем итератор
+        RandomFileSystemComponentIterator iterator = new RandomFileSystemComponentIterator(directory1);
+
         // Выводим информацию о файловой системе
-        Visitor visitor = new Visitor();
-        FileSystemComponent[] arr = {file1, file2, file3, directory1, directory2};
-        for (FileSystemComponent fileSystemComponent : arr)
-        {
-            fileSystemComponent.accept(visitor);
+        while (iterator.hasNext()) {
+            FileSystemComponent component = iterator.next();
+            component.displayInfo();
         }
+
     }
 }
