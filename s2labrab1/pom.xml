@@ -24,7 +24,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>SPP.s2labrab1.Main</mainClass>
+                            <mainClass>SPP.s2labrab1.Task2</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
