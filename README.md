@@ -8,9 +8,9 @@ Modern programming platforms
 
 2-ой вариант
 
-Сдача проводится по гитхабу: https://github.com/kroschenko/spp_po9 и https://github.com/11ALX11/reports_SPP
-
 ---
+
+Сдача проводится по гитхабу: https://github.com/kroschenko/spp_po9 и https://github.com/11ALX11/reports_SPP
 
 - [x] Лабораторная работа №1
 - [x] Лабораторная работа №2
@@ -22,7 +22,7 @@ Modern programming platforms
 
 ---
 
-- [ ] Лабораторная работа №1 (вариант 2)
-- [ ] Лабораторная работа №2
+- [x] Лабораторная работа №1 (вариант 2)
+- [ ] Лабораторная работа №2 (вариант 2)
 - [ ] Лабораторная работа №3
 - [ ] Лабораторная работа №4
