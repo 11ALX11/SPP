@@ -4,6 +4,7 @@ target/
 !**/src/test/**/target/
 
 myDB/
+*.log
 
 ### IntelliJ IDEA ###
 .idea/modules.xml

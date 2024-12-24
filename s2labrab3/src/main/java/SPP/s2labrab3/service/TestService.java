@@ -34,6 +34,7 @@ public class TestService
         loadAuthorJournalLinks();
     }
 
+    @Deprecated
     public void deleteDatabase()
     {
         String deleteDatabaseSQL1 = "DROP TABLE authors";
